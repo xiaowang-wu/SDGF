@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this software when using the SDGF implementation."
+type: software
+title: "SDGF: Static-Dynamic Gated Fusion"
+authors:
+  - name: "xiaowang-wu"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/xiaowang-wu/SDGF"

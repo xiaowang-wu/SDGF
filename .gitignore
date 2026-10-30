@@ -1,0 +1,5 @@
+__pycache__/
+outputs/
+data/raw/
+data/*.preprocess.json
+examples/*.csv

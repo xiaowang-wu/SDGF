@@ -1,0 +1,50 @@
+{
+  "data": {
+    "path": "data/load_3.csv",
+    "time_column": "timestamp",
+    "expected_frequency": "1h",
+    "target": "active_power_mw",
+    "ts_features": [
+      "active_power_mw",
+      "apparent_temperature_c",
+      "cloud_cover_percent"
+    ],
+    "static_features": [
+      "is_holiday",
+      "is_weekend",
+      "is_school_vacation",
+      "month_sin",
+      "month_cos",
+      "hour_sin",
+      "hour_cos"
+    ],
+    "train_ratio": 0.7,
+    "val_ratio": 0.15
+  },
+  "training": {
+    "epochs": 500,
+    "batch_size": 128,
+    "lr_static": 0.001,
+    "lr_main": 0.001,
+    "lr_dynamic": 0.0003,
+    "weight_decay": 2e-05,
+    "patience": 10,
+    "min_delta": 1e-06,
+    "use_huber": true,
+    "use_scheduler": true,
+    "scheduler_t0": 30,
+    "scheduler_t_mult": 2,
+    "eta_min": 1e-06,
+    "seed": 42,
+    "deterministic": true,
+    "num_threads": 1
+  },
+  "model": {
+    "dynamic_hidden_dims": [
+      64,
+      32
+    ],
+    "dropout": 0.1,
+    "use_feature_attention": true
+  }
+}

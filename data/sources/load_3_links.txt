@@ -1,0 +1,8 @@
+Load 3: Dominican Republic
+Dataset: Short-Term Forecasting Dataset SENI Dominican Rep
+Source: https://www.kaggle.com/datasets/rafaeluceta/short-term-forecasting-dataset-seni-dominican-rep
+File: https://www.kaggle.com/datasets/rafaeluceta/short-term-forecasting-dataset-seni-dominican-rep?select=datos_modelo.csv
+Expected input: datos_modelo.csv
+Target: active_power_mw
+Preprocessing: parse timestamp as day/month/year (e.g. 2/1/21 is 2 January 2021); sort; recalculate calendar fields; add hour sine-cosine features and month-minus-one sine-cosine features; preserve supplied holiday/weekend/vacation indicators.
+Command: python -m sdgf prepare --dataset load_3 --input data/raw/datos_modelo.csv --output data/load_3.csv

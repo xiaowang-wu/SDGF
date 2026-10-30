@@ -1,0 +1,7 @@
+Load 1: Panama
+Dataset: Electricity Load Forecasting
+Source: https://www.kaggle.com/datasets/saurabhshahane/electricity-load-forecasting
+Expected input: continuous_dataset.csv
+Target: nat_demand
+Preprocessing: parse and sort datetime; add hour/month sine-cosine features and weekend indicator; preserve original measurements, holiday and school fields.
+Command: python -m sdgf prepare --dataset load_1 --input data/raw/continuous_dataset.csv --output data/load_1.csv

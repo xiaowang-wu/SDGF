@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sdgf"
+version = "0.1.0"
+description = """Static-dynamic gated fusion for \
+one-step multivariate time-series forecasting"""
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = [
+    "torch>=2.2,<3",
+    "numpy>=1.24,<3",
+    "pandas>=2.0,<4",
+    "scikit-learn>=1.2,<2",
+    "openpyxl>=3.1,<4",
+]
+
+[project.scripts]
+sdgf = "sdgf.cli:main"
+
+[tool.setuptools]
+packages = ["sdgf"]
+

@@ -1,0 +1,8 @@
+Load 2: Australia
+Dataset: Power Load Forecasting
+Source: https://ieee-dataport.org/documents/power-load-forecasting
+Expected input: Australia.csv
+Target: pl
+Preprocessing: parse and sort date; retain minute == 0 observations from the half-hourly series; add hour/month sine-cosine features and weekend indicator.
+Command: python -m sdgf prepare --dataset load_2 --input data/raw/Australia.csv --output data/load_2.csv
+Provenance: the URL is recorded alongside Australia.csv in the author's source data collection. Access may require an IEEE DataPort account; automatic page retrieval was blocked during this code release.
