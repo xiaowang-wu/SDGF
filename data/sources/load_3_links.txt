@@ -1,0 +1,4 @@
+Load 3: Dominican Republic
+Dataset: Short-Term Forecasting Dataset SENI Dominican Rep
+Source: https://www.kaggle.com/datasets/rafaeluceta/short-term-forecasting-dataset-seni-dominican-rep
+File: https://www.kaggle.com/datasets/rafaeluceta/short-term-forecasting-dataset-seni-dominican-rep?select=datos_modelo.csv

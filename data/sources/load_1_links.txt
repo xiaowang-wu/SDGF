@@ -1,0 +1,3 @@
+Load 1: Panama
+Dataset: Electricity Load Forecasting
+Source: https://www.kaggle.com/datasets/saurabhshahane/electricity-load-forecasting

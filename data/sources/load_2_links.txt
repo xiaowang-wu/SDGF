@@ -1,0 +1,3 @@
+Load 2: Australia
+Dataset: Power Load Forecasting
+Source: https://ieee-dataport.org/documents/power-load-forecasting
